@@ -52,7 +52,7 @@ export async function POST(req: Request) {
 
     return NextResponse.json(listing, { status: 201 });
   } catch (error) {
-    console.log("listing post error", error.message);
+    console.log("listing post error", error);
     return NextResponse.json(
       { error: "Something went wrong" },
       { status: 500 },
